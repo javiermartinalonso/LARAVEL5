@@ -12,22 +12,4 @@
 |
 */
 
-Route::get('/', function () {
-    return 'hola mundo';
-});
-
-
-//Parametro nombre opcional y respuesta por defecto
-//restringir los caracteres que acepta
-Route::get('usuarios/{nombre?}', function ($nombre='Rubén') {
-    return $nombre;
-}) ->where('nombre', '[a-zA-Z]+'); //solo permitimos letras minusculas y mayusculas
-
-
-Route::get('usuarios', function () {
-	//devuelve todos los usuarios
-});
-
-Route::post('usuarios', function () {
-	//crea un nuevo usuario
-});
+Route::get('/', 'HomeController@home');
