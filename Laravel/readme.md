@@ -19,7 +19,9 @@
 
 		vagrant provision
 
+- dentro de la maquina virtual (vagrant ssh). Crear controlador.
 
+		php artisan make:controller PagesController
 
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
