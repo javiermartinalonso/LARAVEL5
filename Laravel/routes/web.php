@@ -17,6 +17,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('testing/cualquiera/nuevo', function () {
-    return 'aprendiendo rutas';
-});
+//Parametro nombre opcional y respuesta por defecto
+//restringir los caracteres que acepta
+Route::get('usuarios/{nombre?}', function ($nombre='Rubén') {
+    return $nombre;
+}) ->where('nombre', '[a-zA-Z]+'); //solo permitimos letras minusculas y mayusculas
