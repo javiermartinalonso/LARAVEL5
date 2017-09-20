@@ -15,3 +15,4 @@
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'TicketsController@create');
+Route::post('/contact', 'TicketsController@store');

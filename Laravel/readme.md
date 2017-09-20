@@ -63,6 +63,12 @@ https://laravel.com/docs/5.4/artisan
 
 		php artisan make:controller TicketsController --resource
 
+- Crear request
+
+		php artisan make:request TicketFormRequest
+
+		composer update
+
 
 
 
