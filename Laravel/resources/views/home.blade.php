@@ -1,10 +1,17 @@
 @extends('master')
-@section('title','home')
+@section('title', 'Home')
 @section('content')
 <div class="container">
-	<div class="content">
-		<div class="title">Pagina de inicio</div>
-		<div class="quote">¡Nuestra página de inicio!</div>
+	<div class="row banner">
+		<div class="col-md-12">
+			<h1 class="text-center margin-top-100 editContent">
+			Curso de Laravel 5
+			</h1>
+			<h3 class="text-center margin-top-100 editContent">Construyendo Aplicaciones prácticas</h3>
+				<div class="text-center">
+					<img src="http://videotutoriales.com/presentacionl5.png" width="600" height="350" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 @endsection
