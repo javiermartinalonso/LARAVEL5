@@ -22,3 +22,12 @@ Route::get('/', function () {
 Route::get('usuarios/{nombre?}', function ($nombre='Rubén') {
     return $nombre;
 }) ->where('nombre', '[a-zA-Z]+'); //solo permitimos letras minusculas y mayusculas
+
+
+Route::get('usuarios', function () {
+	//devuelve todos los usuarios
+});
+
+Route::post('usuarios', function () {
+	//crea un nuevo usuario
+});
