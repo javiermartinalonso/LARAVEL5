@@ -59,6 +59,10 @@ https://laravel.com/docs/5.4/artisan
 		php artisan make:model Ticket -m
 
 
+- crear controlador con artisan
+
+		php artisan make:controller TicketsController --resource
+
 
 
 
