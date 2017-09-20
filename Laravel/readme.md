@@ -23,6 +23,49 @@
 
 		php artisan make:controller PagesController
 
+- bbdd de homestead desde larabel
+
+		mysql -u homestead -p
+
+pass --> secret
+
+CREATE DATABASE mi_basedatos;
+
+show databases;
+
+- Uso de artisan para las migraciones de bbdd.
+
+https://laravel.com/docs/5.4/artisan
+
+- listar todos los comandos de artisan
+
+		php artisan list
+
+- creamos una tabla en /Code/Laravel
+
+		php artisan make:migration create_tickets_table
+
+		php artisan make:migration create_tickets_table --create=tickets
+		composer dump-autoload -o
+
+		php artisan migrate
+
+
+		php artisan make:model Ticket
+
+- eloquent, ORM de laravel
+	- crea la migracion Tickets
+	
+		php artisan make:model Ticket -m
+
+
+
+
+
+
+
+
+
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
