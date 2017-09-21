@@ -11,6 +11,12 @@
                 <p class="alert alert-danger">{{ $error }}</p>
                 @endforeach
 
+                @if (session('status'))
+                    <div class = "alert alert-success">
+                        {{ session ('status') }}
+                    </div>
+                @endif
+
                 <input type="hidden" name="_token" value="{!! csrf_token() !!}">
                 <fieldset>
                     <legend>Enviar un nuevo ticket</legend>
