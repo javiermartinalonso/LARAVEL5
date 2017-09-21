@@ -20,11 +20,13 @@
                         </thead>
                         <tbody>
                             @foreach($tickets as $ticket)
-                                <tr>
-                                    <td>{!! $ticket->id !!} </td>
-                                    <td>{!! $ticket->title !!}</td>
-                                    <td>{!! $ticket->status ? 'Pendiente' : 'Respondido' !!}</td>
-                                </tr>
+                                  <tr>
+                                     <td>{!! $ticket->id !!}</td>
+                                     <td>
+                                      <a href="{!! action('TicketsController@show', $ticket->slug) !!}">{!! $ticket->title !!} </a>
+                                     </td>
+                                     <td>{!! $ticket->status ? 'Pendiente' : 'Respondido' !!}</td>
+                                   </tr>
                             @endforeach
                         </tbody>
                     </table>
