@@ -15,7 +15,9 @@ class TicketsController extends Controller
      */
     public function index()
     {
-        //
+    	$tickets = Ticket::all();
+	//compact devuelve un array de tickets
+    	return view('tickets.index', compact('tickets'));
     }
 
     /**
