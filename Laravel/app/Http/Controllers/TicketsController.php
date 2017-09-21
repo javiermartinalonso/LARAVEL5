@@ -68,10 +68,9 @@ class TicketsController extends Controller
      */
     public function show($slug)
     {
-	//firstOrFail devuelve el primer registro o error si no hay registros
-        $ticket = Ticket::whereSlug($slug)->firstOrFail();
-	//redireccionamos una lista a la vista
-        return view('tickets.show', compact('ticket'));
+    $ticket = Ticket::whereSlug($slug)->firstOrFail();
+    $comments = $ticket->comments()->get();
+    return view('tickets.show', compact('ticket', 'comments'));
     }
 
     /**
