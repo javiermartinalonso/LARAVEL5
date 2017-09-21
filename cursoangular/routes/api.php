@@ -17,9 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+Route::group(['prefix' => 'v1'], function(){
     //crear rutas restfull para objetos images, las gestionamos desde el controlador ImagesController
     Route::resource('images', 'ImagesController');
-
+});
 
 

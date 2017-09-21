@@ -37,6 +37,8 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
+        //aqui limitamos los ataques dd2 a 60 peticiones x minuto, si se piden más
+        //devuelve error to many request
         'api' => [
             'throttle:60,1',
             'bindings',
