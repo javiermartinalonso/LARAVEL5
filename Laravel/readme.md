@@ -70,7 +70,11 @@ https://laravel.com/docs/5.4/artisan
 		composer update
 
 
+- nuevas paginas
 
+	modificacion de fichero de rutas web.php
+	crear la vista asociada
+	modificar el controlador para usar esa vista
 
 
 

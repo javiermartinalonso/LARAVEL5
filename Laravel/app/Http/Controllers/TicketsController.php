@@ -56,9 +56,12 @@ class TicketsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+	//firstOrFail devuelve el primer registro o error si no hay registros
+        $ticket = Ticket::whereSlug($slug)->firstOrFail();
+	//redireccionamos una lista a la vista
+        return view('tickets.show', compact('ticket'));
     }
 
     /**
