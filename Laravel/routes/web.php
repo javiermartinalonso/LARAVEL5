@@ -21,3 +21,20 @@ Route::get('/ticket/{slug?}', 'TicketsController@show');
 Route::get('/ticket/{slug?}/edit','TicketsController@edit');
 Route::post('/ticket/{slug?}/edit','TicketsController@update');
 Route::post('/ticket/{slug?}/delete','TicketsController@destroy');
+Route::get('sendemail', function () {
+
+    $data = array(
+        'name' => "Curso Laravel",
+    );
+
+    Mail::send('emails.welcome', $data, function ($message) {
+
+        $message->from('javimartinalonso@gmail.com', 'Curso Laravel');
+
+        $message->to('javimartinalonso@gmail.com')->subject('test email Curso Laravel');
+
+    });
+
+    return "Tú email ha sido enviado correctamente";
+
+});
