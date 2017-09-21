@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+    //crear rutas restfull para objetos images, las gestionamos desde el controlador ImagesController
+    Route::resource('images', 'ImagesController');
+
+
+
