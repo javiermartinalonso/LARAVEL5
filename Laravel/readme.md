@@ -76,10 +76,13 @@ https://laravel.com/docs/5.4/artisan
 	crear la vista asociada
 	modificar el controlador para usar esa vista
 
+- gestionamos la creacion de una nueva tabla comments
 
+		php artisan make:migration create_comments_table --create=comments
 
+- creamos la tabla
 
-
+		php artisan migrate
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
