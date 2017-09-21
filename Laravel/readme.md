@@ -84,6 +84,21 @@ https://laravel.com/docs/5.4/artisan
 
 		php artisan migrate
 
+- crear la relacion oneToMany entre ticket y comment
+
+	- crear modelo comment
+
+		php artisan make:model Comment
+
+	- crear controlador
+
+		php artisan make:controller CommentsController
+
+	- crear request, para validar el envío del comentario
+
+		php artisan make:request CommentFormRequest
+
+
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
