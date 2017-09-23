@@ -41,7 +41,7 @@ https://laravel.com/docs/5.4/artisan
 
 		php artisan list
 
-- creamos una tabla en /Code/Laravel
+- creamos una migracion de tablas en /Code/Laravel
 
 		php artisan make:migration create_tickets_table
 
@@ -54,7 +54,7 @@ https://laravel.com/docs/5.4/artisan
 		php artisan make:model Ticket
 
 - eloquent, ORM de laravel
-	- crea la migracion Tickets
+	- crea la tabla Tickets
 	
 		php artisan make:model Ticket -m
 
@@ -97,6 +97,11 @@ https://laravel.com/docs/5.4/artisan
 	- crear request, para validar el envío del comentario
 
 		php artisan make:request CommentFormRequest
+
+
+
+
+
 
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
