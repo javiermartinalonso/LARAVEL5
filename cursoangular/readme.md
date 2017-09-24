@@ -63,7 +63,11 @@ show databases;
 
 		php artisan make:middleware Cors
 
+- modificar bug de cors
 
+- modificar funcion store de imageController
+
+- public/index.php añadir cabeceras para permitir cors
 
 
 
