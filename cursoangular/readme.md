@@ -67,7 +67,8 @@ show databases;
 
 - modificar funcion store de imageController
 
-- public/index.php añadir cabeceras para permitir cors
+- public/index.php y app/http/middleware/cors.php añadir cabeceras para permitir cors
+
 
 
 
