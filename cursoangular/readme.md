@@ -1,6 +1,25 @@
+## Resumen comandos importantes
+
+    cd C:\Users\javier.martin\Homestead
+
+    vagrant up
+
+## url
+
+https://cursoangular.app/api/v1/images
+
+
+
 ## Laravel API RESTFULL
 
 -------------------------------
+- levantar maquina virtual. Desde la carptea con Homestead donde se encuentra el archivo 	`Homestead.yaml`
+
+		vagrant up
+
+- acceder a la maquina virtual
+
+		vagrant ssh
 
 - creamos api rest con laravel
 
